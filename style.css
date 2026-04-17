@@ -1,0 +1,303 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: lightgoldenrodyellow;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.inner {
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+header > .inner {
+	height: 120px;
+}
+
+ul{
+  list-style: none;  /* 불릿(점) 제거 */
+  padding-left: 0;   /* 왼쪽 들여쓰기 제거 (필요시) */
+}
+
+
+/*헤더*/
+header{
+	background-color: white;
+
+}
+
+
+
+
+header > .inner 
+{height: 120px;}
+
+
+header .logo {
+	height: 75px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+header .sub-menu{
+	position: absolute;
+	top: 10px;
+	right: 0;
+	display: flex;
+
+}
+
+header .sub-menu ul.menu{
+	font-family: Arial, sans-serif;
+	display: flex;
+}
+
+header .sub-menu ul.menu li{
+	position: relative;
+}
+
+header .sub-menu ul.menu li a:hover{
+	color: #000;
+}
+
+header .sub-menu ul.menu li::before{
+	content: "";
+	width: 1px;
+	height: 12px;
+	background-color: #e5e5e5;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+header .sub-menu ul.menu li a{
+	padding: 11px 16px;
+	display: block;
+	font-size: 13px;
+	color: #656565;
+}
+
+header .sub-menu .search {
+	position:relative;
+	height: 34px;
+}
+
+header .sub-menu .search input{
+	width:60px;
+	height:30px;
+	padding: 4px 10px;
+	border: solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px ;
+	outline: none;
+	background-color: #fff;
+	color: #777;
+	font-size: 12px;
+	transition: width .4s;
+
+}
+
+
+header .sub-menu .search .material-icons{
+	height: 24px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right:5px;
+	margin: auto;
+	transition: .4s;
+}
+
+header .sub-menu .search input:focus{
+	width: 150px;
+	border-color: #EA9926;
+}
+
+header .sub-menu .search .material-icons{}
+
+
+header .main-menu {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	display: flex;
+}
+
+header .main-menu .item .item__name {
+	padding: 10px 20px 34px 20px;
+	font-family: monospace;
+	font-size: 13px;
+}
+header .main-menu .item .item__contents {
+	background-color: #2C2A29;
+	width:100%;
+	position: fixed;
+	left:0;
+	display: none;
+}
+
+header .main-menu .item .item__contents .contents__menu {
+	background-color: #2C2A29;
+
+}
+
+header .main-menu .item:hover .item__contents{
+	display: block;
+}
+
+header .main-menu .item:hover .item__name {
+	background-color: #2C2A29;
+	color: orange;
+	border-radius: 6px 6px 0 0;
+} 
+
+
+header .main-menu .item .item__contents .contents__menu > ul {
+	padding: 20px 0;
+	font-display: flex;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li {
+	width: 220px;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+	padding: 3px 0 12px 0;
+	font-size: 14px;
+	color: #fff;
+}
+
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+	padding: 5px 0;
+	font-size: 12px;
+	color: #999;
+	cursor: pointer;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+color: #EA9926;
+}
+
+header .main-menu .item.item__contents .contents__texture {
+	padding: 26px 0;
+	font-size: 10px;
+}
+
+header .main-menu .item .item__contents .contents__texture h4 {
+	color: #999;
+	font-weight: 900;
+	font-size: 10px;
+}
+
+header .main-menu .item .item__contents .contents__texture p {
+	color: #EA9926;
+	margin: 4px 0 14px;
+	font-size: 10px;
+}
+
+/*youtube*/
+.youtube {
+	position:relative;
+	height: 700px;
+	background-color: #333;
+	overflow: hidden;
+	
+}
+
+.youtube .youtube__area {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 1920px;
+	height: calc(1920px * 9/ 16);
+	margin-left: calc(1920px / -2);
+	margin-top: calc(1920px / -2 * 9 / 16);
+}
+
+
+.container {
+	padding: 50px 0;
+
+}
+
+
+.doors{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 660px;
+	background-color: orange;
+	margin: 0 auto;
+	padding: 40px 20px;
+	border-radius:10px;
+
+}
+
+.door{
+	width:80px;
+	height: 84px;
+	margin: 4px;
+	background-color: #555;
+	border-radius:10px;
+	box-sizing: border-box;
+	transition: transform .1s, background-color .6s;
+	overflow: hidden;
+
+}
+
+.door:hover {
+	background-color: #155;
+	transform: scale(1.1);
+	z-index: 1;
+}
+
+.door .image{
+	width:150%;
+	height:100%;
+	background-size: cover;
+	background-position: center;
+
+
+
+}
+
+.door:nth-child(1) .image {
+	background-image: url(https://daganghalal.blob.core.windows.net/28749/Product/1000x1000__apple1-1657088917775.jpg);
+}
+
+.door:nth-child(2) .image {
+	background-image: url();
+}
+
+.door:nth-child(3) .image {
+	background-image: url();
+}
+
+h1.title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (max-width: 704px) {
+
+}
