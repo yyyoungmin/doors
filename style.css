@@ -5,6 +5,15 @@
 }
 
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("video_cover_pattern.png") repeat;
+  opacity: 0.3; /* 여기서 조절 */
+  z-index: -1;
+}
+
 
 body {
     background-color: lightgoldenrodyellow;
