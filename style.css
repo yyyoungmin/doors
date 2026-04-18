@@ -233,15 +233,7 @@ header .main-menu .item .item__contents .contents__texture p {
 	margin-top: calc(1920px / -2 * 9 / 16);
 }
 
-.youtube .youtube__cover {
- position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 
-	background-image: url("video_cover_pattern.png");
-}
 
 .container {
 	padding: 50px 0;
