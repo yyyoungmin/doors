@@ -12,13 +12,13 @@
         player = new YT.Player('player', {
           width: '100%',
             height: '100%',
-          videoId: 'p7-ndhZgrOE'
+          videoId: 'nW_Lo4xkZ50'
            playerVars: {
   playsinline: 1,
-  autoplay: 1,
+  autoplay: true,
   mute: 1,
   loop: 1,
-  playlist: 'p7-ndhZgrOE'
+  playlist: 'nW_Lo4xkZ50'
 }
           },
           events: {
