@@ -237,9 +237,9 @@ header .main-menu .item .item__contents .contents__texture p {
  position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%
-	height: 100%
-	baground-color: rgba(0,0,0,.3);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
 	background-image: url("video_cover_pattern.png");
 }
 
